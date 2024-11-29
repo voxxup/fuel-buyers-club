@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Buyers Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="32x32"
+      href="/assets/icons/fav-icon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="16x16"
+      href="/assets/icons/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Tailwind config to extend font family
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              primaryRed: "#FC060C", // Define your custom red color
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-slate-950">
+    <!-- Header -->
+    <header class="bg-slate-950">
+      <div
+        class="container mx-auto px-4 pt-8 flex items-center justify-between"
+      >
+        <img
+          src="assets/icons/fbc_logo_text_white.svg"
+          alt="Fuel Buyers Club logo"
+          class="inline-block h-[35px]"
+        />
+        <div class="flex">
+          <a href="https://dev.fuelbuyersclub.com/signin">
+            <button
+              class="text-white font-manrope rounded-lg text-sm px-10 py-4 me-2 mb-2 focus:outline-none hidden md:block"
+            >
+              Login
+            </button>
+          </a>
+          <a href="https://dev.fuelbuyersclub.com/signup">
+            <button
+              class="text-white bg-primaryRed font-manrope rounded-lg text-sm px-10 py-4 me-2 mb-2 focus:outline-none hidden md:block"
+            >
+              Sign up
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-custom-gradient w-full h-[calc(100vh-88px)] py-[96px] gap-[64px]"
+    >
+      <div
+        class="container mx-auto px-4 text-white text-center h-full flex items-center"
+      >
+        <div class="w-full flex flex-row justify-between items-center">
+          <div class="flex-column text-left">
+            <h1
+              class="font-manrope text-3xl md:text-6xl font-bold relative mb-6 max-w-2xl text-left md:text-left"
+            >
+              Fuel Up for
+              <span class="text-primaryRed">
+                <span> Less </span>
+              </span>
+              at Your Truck Stops
+            </h1>
+
+            <p
+              class="font-manrope text-sm md:text-lg font-normal leading-4 max-w-4xl text-left md:text-left mb-8 text-slate-300"
+            >
+              Save more on every fill-up and keep your journey on <br />track
+              with exclusive offers.<br />
+            </p>
+            <a href="https://dev.fuelbuyersclub.com/signup">
+              <button
+                type="button"
+                class="text-white text-lg bg-primaryRed font-manrope rounded-lg px-10 py-4 me-2 mb-2 focus:outline-none w-full sm:w-auto"
+              >
+                Get Started
+              </button>
+            </a>
+          </div>
+          <img
+            src="assets/images/truck_stop.webp"
+            alt="Truck Stop"
+            class="inline-block w-[655px] h-[500px] rounded-xl"
+          />
+        </div>
+      </div>
+      <img
+        src="assets/icons/coin.svg"
+        alt="Dollar Icon"
+        class="absolute bottom-[25%] left-[75%] md:bottom-[30%] md:left-[40%] w-16 md:w-20"
+      />
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-8 lg:pt-32 pb-16 relative">
+      <div class="container mx-auto px-4 text-center flex flex-col gap-10">
+        <div class="grid md:grid-cols-1 gap-4 md:gap-8 w-full">
+          <div
+            class="flex flex-row justify-between border border-1 bg-slate-950 border-gray-200 p-4 md:p-8 rounded-xl text-left"
+          >
+            <img
+              src="assets/icons/decorative_element.svg"
+              alt="Decorative Pattern"
+              class="absolute md:left-[10%] w-16 md:w-8"
+            />
+            <div class="flex flex-col p-4 md:p-8 rounded-xl text-left">
+              <div class="flex items-center mb-10">
+                <h3 class="text-5xl md:text-5xl font-manrope text-gray-50">
+                  Save More with Effortless <br />
+                  Reservations.
+                </h3>
+              </div>
+              <a href="https://dev.fuelbuyersclub.com/signup">
+                <button
+                  type="button"
+                  class="flex text-white bg-primaryRed font-manrope rounded-lg text-lg px-8 py-5 me-2 mb-2 focus:outline-none"
+                >
+                  Visit App
+                  <img
+                    src="/assets/icons/link_arrow.svg"
+                    alt="Arrow Icon"
+                    class="w-8 h-8 ml-2"
+                  />
+                </button>
+              </a>
+            </div>
+            <img
+              src="assets/images/RoadysCanopy.jpg"
+              alt="Roadys Truck Stop"
+              class="inline-block w-5 h-5 md:w-64 md:h-64 rounded-lg"
+            />
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 md:gap-8">
+          <div
+            class="flex flex-col bg-white border border-1 border-gray-200 p-10 md:p-10 rounded-xl text-left"
+          >
+            <img
+              src="assets/screenshots/reservation_screenshot.svg"
+              alt="Reservation Screenshot"
+              class="inline-block mb-8 h-[422.56px]"
+            />
+            <h3 class="font-manrope text-2xl md:text-2xl font-semibold mb-4">
+              One-Click Reservation
+            </h3>
+
+            <p class="font-manrope text-gray-500 text-sm md:text-base">
+              Reserve your truck stops in just a few taps and secure your
+              discounted fuel instantly .
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col bg-white border border-1 border-gray-200 p-4 md:p-8 rounded-xl text-left"
+          >
+            <img
+              src="assets/screenshots/qr_code.svg"
+              alt="QR Code Image"
+              class="inline-block mb-8"
+            />
+            <h3 class="font-manrope text-2xl md:text-2xl font-semibold mb-4">
+              Instant QR Code Delivery
+            </h3>
+
+            <p class="font-manrope text-gray-500 text-sm md:text-base">
+              Receive a QR code straight to your phone via SMS after completing
+              your reservation.
+            </p>
+          </div>
+          <div
+            class="flex flex-col bg-white border border-1 border-gray-200 p-4 md:p-8 rounded-xl text-left"
+          >
+            <img
+              src="assets/screenshots/savings.svg"
+              alt="Savings Image"
+              class="inline-block mb-8"
+            />
+            <h3 class="font-manrope text-2xl md:text-2xl font-semibold mb-4">
+              Hassle-Free Discounts
+            </h3>
+
+            <p class="font-manrope text-gray-500 text-sm md:text-base">
+              Scan the QR code at participating truck stops to enjoy exclusive
+              fuel discounts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="bg-gray-100 py-8 lg:py-16">
+      <div class="container mx-auto px-4 text-left md:text-center">
+        <h2 class="font-manrope text-5xl font-semibold mb-3 text-[#101828]">
+          Fuel Savings at Your Fingertips
+        </h2>
+        <p
+          class="font-manrope text-base font-normal text-[#667085] mb-8 text-xl md:text-xl"
+        >
+          Explore how easy it is to reserve, save, and refuel. From finding the
+          right truck stop<br />
+          to securing discounts with a simple QR code, our app puts every step
+          of the process<br />
+          in your hands.
+        </p>
+        <img
+          src="assets/screenshots/reservation_screenshot_2.svg"
+          alt="Reservation Screenshot"
+          class="inline-block h-[556px]"
+        />
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="bg-gray-100 py-8 lg:py-16">
+      <div class="container mx-auto px-4 text-left md:text-center">
+        <div
+          class="flex flex-row justify-center border border-1 bg-slate-950 border-gray-200 p-4 md:p-8 rounded-xl text-center"
+        >
+          <div class="flex flex-col p-4 md:p-8 rounded-xl text-center">
+            <div class="flex items-center gap-2 mb-10">
+              <h3 class="font-manrope md:text-5xl font-semibold text-gray-50">
+                Get started today for <br />
+                better savings.<br />
+              </h3>
+            </div>
+            <a href="https://dev.fuelbuyersclub.com/signup">
+              <button
+                type="button"
+                class="font-manrope text-white bg-primaryRed font-medium rounded-lg text-lg px-10 py-4 me-2 mb-2 focus:outline-none sm:w-auto"
+              >
+                Sign up
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-black text-right py-4 px-12">
+      <div
+        class="flex flex-col md:flex-row md: justify-between mx-auto px-8 text-[#98A2B3] items-center border-t-2 py-2"
+      >
+        <img
+          src="assets/icons/fbc_logo_text_dark.svg"
+          alt="tigris works logo - footer"
+          class="inline-block w-[144px] h-[48px]"
+        />
+        <p class="font-manrope text-center md:text-right text-sm md:text-base">
+          &copy; 2024 Fuel Buyers Club. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
